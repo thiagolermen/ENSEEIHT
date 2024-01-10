@@ -1,0 +1,20 @@
+# Default data
+
+data;
+
+set STORE := S1 S2 S3;
+set FLUID := F1 F2;
+set CLIENT := C1 C2;
+
+param Commands: F1 F2 := 
+C1 2 0 
+C2 1 3;
+
+param Stocks: F1 F2 := 
+S1  2.5 1
+S2  1 2
+S3  2 1;
+param Costs: F1 F2 :=
+S1 1 1
+S2 2 3
+S3 3 2;

@@ -1,0 +1,27 @@
+# Default data
+
+data;
+
+set MODELS := L S;
+
+param perBatchProfit := 
+L 100
+S 1000;
+
+param perBatchTime := 
+L 1
+S 9;
+
+param totalTime := 110;
+
+param perBatchSpace := 
+L 1000
+S 2000;
+
+param totalSpace := 21000;
+
+param perBatchLimit := 
+L 10
+S 999999;
+
+end;

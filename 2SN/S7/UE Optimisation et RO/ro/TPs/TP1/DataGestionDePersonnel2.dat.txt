@@ -1,0 +1,13 @@
+# Default data
+
+data;
+
+set PERSON := P1 P2 P3 P4 P5;
+set WORK := W1 W2 W3 W4 W5;
+
+param personWorkCost: W1 W2 W3 W4 W5:= 
+P1 1 100 100 100 100
+P2 100 1 100 100 100
+P3 100 100 1 100 100
+P4 100 100 100 1 100
+P5 100 100 100 100 1;

@@ -1,0 +1,29 @@
+# Model #
+
+# Sets #
+set STORE;
+set FLUID;
+set CLIENT;
+
+# Variables
+var Assignments{s in STORE, f in FLUID, c in CLIENT}, integer >= 0;
+
+# Constants
+param Commands{c in CLIENT,f in FLUID};
+param Stocks{s in STORE, f in FLUID};
+param Costs{s in STORE, f in FLUID};
+
+# Constraints
+s.t. RespectCommands{f in FLUID, c in CLIENT}: sum{s in STORE} Assignments[s, f, c] = Commands[c, f];
+s.t. RespectStocks{s in STORE, f in FLUID}: sum{c in CLIENT} Assignments[s, f, c] <= Stocks[s, f];
+
+# Objective
+minimize TotalCost:
+    sum{s in STORE, f in FLUID} (sum{c in CLIENT} Assignments[s, f, c]) * Costs[s, f];
+
+# End
+
+
+
+end;
+

@@ -1,0 +1,69 @@
+Problem:    PbEcommerceCas2
+Rows:       11
+Columns:    12 (12 integer, 0 binary)
+Non-zeros:  36
+Status:     INTEGER OPTIMAL
+Objective:  TotalCost = 10 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RespectCommands[F1,C1]
+                                   2             2             = 
+     2 RespectCommands[F1,C2]
+                                   1             1             = 
+     3 RespectCommands[F2,C1]
+                                   0            -0             = 
+     4 RespectCommands[F2,C2]
+                                   3             3             = 
+     5 RespectStocks[S1,F1]
+                                   2                         2.5 
+     6 RespectStocks[S1,F2]
+                                   1                           1 
+     7 RespectStocks[S2,F1]
+                                   1                           1 
+     8 RespectStocks[S2,F2]
+                                   1                           2 
+     9 RespectStocks[S3,F1]
+                                   0                           2 
+    10 RespectStocks[S3,F2]
+                                   1                           1 
+    11 TotalCost                  10                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Assignments[S1,F1,C1]
+                    *              1             0               
+     2 Assignments[S2,F1,C1]
+                    *              1             0               
+     3 Assignments[S3,F1,C1]
+                    *              0             0               
+     4 Assignments[S1,F1,C2]
+                    *              1             0               
+     5 Assignments[S2,F1,C2]
+                    *              0             0               
+     6 Assignments[S3,F1,C2]
+                    *              0             0               
+     7 Assignments[S1,F2,C1]
+                    *              0             0               
+     8 Assignments[S2,F2,C1]
+                    *              0             0               
+     9 Assignments[S3,F2,C1]
+                    *              0             0               
+    10 Assignments[S1,F2,C2]
+                    *              1             0               
+    11 Assignments[S2,F2,C2]
+                    *              1             0               
+    12 Assignments[S3,F2,C2]
+                    *              1             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

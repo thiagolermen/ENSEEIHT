@@ -1,0 +1,29 @@
+# Model #
+
+# Sets #
+set MODELS;
+
+# Variables
+var X{i in MODELS}, integer >= 0;
+
+# Constants
+param perBatchProfit{i in MODELS};
+param perBatchTime{i in MODELS};
+param totalTime;
+param perBatchSpace{i in MODELS};
+param totalSpace;
+param perBatchLimit{i in MODELS};
+
+# Constraints
+s.t. RespectWorkingHours: sum{i in MODELS} (perBatchTime[i] * X[i]) <= totalTime;
+s.t. RespectSpace: sum{i in MODELS} perBatchSpace[i] * X[i] <= totalSpace;
+s.t. RespectLimit{i in MODELS}: X[i] <= perBatchLimit[i];
+
+# Objective
+maximize TotalProfit:
+    sum{i in MODELS} perBatchProfit[i] * X[i];
+
+# End
+
+
+

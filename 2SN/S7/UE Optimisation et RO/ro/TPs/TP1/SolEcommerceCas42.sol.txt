@@ -1,0 +1,99 @@
+Problem:    PbEcommerceCas4
+Rows:       28
+Columns:    19 (19 integer, 16 binary)
+Non-zeros:  75
+Status:     INTEGER OPTIMAL
+Objective:  TotalDistance = 4 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RespectPathRows[1]
+                                   1             1             = 
+     2 RespectPathRows[2]
+                                   1             1             = 
+     3 RespectPathRows[3]
+                                   1             1             = 
+     4 RespectPathRows[4]
+                                   1             1             = 
+     5 RespectPathColumns[1]
+                                   1             1             = 
+     6 RespectPathColumns[2]
+                                   1             1             = 
+     7 RespectPathColumns[3]
+                                   1             1             = 
+     8 RespectPathColumns[4]
+                                   1             1             = 
+     9 RespectPathDiagonal[1]
+                                   0            -0             = 
+    10 RespectPathDiagonal[2]
+                                   0            -0             = 
+    11 RespectPathDiagonal[3]
+                                   0            -0             = 
+    12 RespectPathDiagonal[4]
+                                   0            -0             = 
+    13 RespectTrackGrowing[2,2]
+                                   0            -2               
+    14 RespectTrackGrowing[2,3]
+                                   2            -2               
+    15 RespectTrackGrowing[2,4]
+                                  -2            -2               
+    16 RespectTrackGrowing[3,2]
+                                  -2            -2               
+    17 RespectTrackGrowing[3,3]
+                                   0            -2               
+    18 RespectTrackGrowing[3,4]
+                                  -1            -2               
+    19 RespectTrackGrowing[4,2]
+                                  -1            -2               
+    20 RespectTrackGrowing[4,3]
+                                  -2            -2               
+    21 RespectTrackGrowing[4,4]
+                                   0            -2               
+    22 RespectTrackBound1[2]
+                                  -2                          -2 
+    23 RespectTrackBound1[3]
+                                  -4                          -2 
+    24 RespectTrackBound1[4]
+                                  -3                          -2 
+    25 RespectTrackBound2[2]
+                                   2                           4 
+    26 RespectTrackBound2[3]
+                                   4                           4 
+    27 RespectTrackBound2[4]
+                                   3                           4 
+    28 TotalDistance
+                                   4                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Path[1,1]    *              0             0             1 
+     2 Path[2,1]    *              0             0             1 
+     3 Path[3,1]    *              1             0             1 
+     4 Path[4,1]    *              0             0             1 
+     5 Path[1,2]    *              1             0             1 
+     6 Path[2,2]    *              0             0             1 
+     7 Path[3,2]    *              0             0             1 
+     8 Path[4,2]    *              0             0             1 
+     9 Path[1,3]    *              0             0             1 
+    10 Path[2,3]    *              0             0             1 
+    11 Path[3,3]    *              0             0             1 
+    12 Path[4,3]    *              1             0             1 
+    13 Path[1,4]    *              0             0             1 
+    14 Path[2,4]    *              1             0             1 
+    15 Path[3,4]    *              0             0             1 
+    16 Path[4,4]    *              0             0             1 
+    17 Track[2]     *              2                             
+    18 Track[3]     *              4                             
+    19 Track[4]     *              3                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

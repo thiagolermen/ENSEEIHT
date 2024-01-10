@@ -1,0 +1,27 @@
+# Model #
+
+# Sets #
+set PERSON;
+set WORK;
+
+# Variables
+var X{i in PERSON, j in WORK}, binary;
+
+# Constants
+param personWorkCost{i in PERSON, j in WORK};
+
+# Constraints
+s.t. RespectPersonWork{j in WORK}: sum{i in PERSON} X[i,j] = 1;
+s.t. RespectWorkPerson{i in PERSON}: sum{j in WORK} X[i,j] = 1;
+
+# Objective
+minimize TotalCost:
+    sum{i in PERSON, j in WORK} personWorkCost[i,j] * X[i,j];
+
+# End
+
+
+
+
+
+    

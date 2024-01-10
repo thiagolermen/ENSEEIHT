@@ -1,0 +1,105 @@
+Problem:    PbEcommerceCas3
+Rows:       23
+Columns:    18 (18 integer, 6 binary)
+Non-zeros:  72
+Status:     INTEGER OPTIMAL
+Objective:  TotalCost = 1006 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RespectCommands[F1,C1]
+                                 150           150             = 
+     2 RespectCommands[F1,C2]
+                                   5             5             = 
+     3 RespectCommands[F2,C1]
+                                  10            10             = 
+     4 RespectCommands[F2,C2]
+                                  20            20             = 
+     5 RespectStocks[S1,F1]
+                                 100                         100 
+     6 RespectStocks[S1,F2]
+                                   1                           5 
+     7 RespectStocks[S2,F1]
+                                  35                          35 
+     8 RespectStocks[S2,F2]
+                                  25                          25 
+     9 RespectStocks[S3,F1]
+                                  20                          25 
+    10 RespectStocks[S3,F2]
+                                   4                           4 
+    11 RespectShipping1[S1,C1]
+                                 -59                          -0 
+    12 RespectShipping1[S1,C2]
+                                   0                          -0 
+    13 RespectShipping1[S2,C1]
+                                -116                          -0 
+    14 RespectShipping1[S2,C2]
+                                  -9                          -0 
+    15 RespectShipping1[S3,C1]
+                                -145                          -0 
+    16 RespectShipping1[S3,C2]
+                                 -16                          -0 
+    17 RespectShipping2[S1,C1]
+                                -100                          -0 
+    18 RespectShipping2[S1,C2]
+                                   0                          -0 
+    19 RespectShipping2[S2,C1]
+                                 -43                          -0 
+    20 RespectShipping2[S2,C2]
+                                 -15                          -0 
+    21 RespectShipping2[S3,C1]
+                                 -14                          -0 
+    22 RespectShipping2[S3,C2]
+                                  -8                          -0 
+    23 TotalCost                1006                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 ProductAssignments[S1,F1,C1]
+                    *            100             0               
+     2 ProductAssignments[S2,F1,C1]
+                    *             35             0               
+     3 ProductAssignments[S3,F1,C1]
+                    *             15             0               
+     4 ProductAssignments[S1,F1,C2]
+                    *              0             0               
+     5 ProductAssignments[S2,F1,C2]
+                    *              0             0               
+     6 ProductAssignments[S3,F1,C2]
+                    *              5             0               
+     7 ProductAssignments[S1,F2,C1]
+                    *              1             0               
+     8 ProductAssignments[S2,F2,C1]
+                    *              9             0               
+     9 ProductAssignments[S3,F2,C1]
+                    *              0             0               
+    10 ProductAssignments[S1,F2,C2]
+                    *              0             0               
+    11 ProductAssignments[S2,F2,C2]
+                    *             16             0               
+    12 ProductAssignments[S3,F2,C2]
+                    *              4             0               
+    13 ParcelAssignments[C1,S1]
+                    *              1             0             1 
+    14 ParcelAssignments[C2,S1]
+                    *              0             0             1 
+    15 ParcelAssignments[C1,S2]
+                    *              1             0             1 
+    16 ParcelAssignments[C2,S2]
+                    *              1             0             1 
+    17 ParcelAssignments[C1,S3]
+                    *              1             0             1 
+    18 ParcelAssignments[C2,S3]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

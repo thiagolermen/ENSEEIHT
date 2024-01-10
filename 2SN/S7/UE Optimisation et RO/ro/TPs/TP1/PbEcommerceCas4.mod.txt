@@ -1,0 +1,32 @@
+### Model
+
+### Sets
+
+set INDEX;
+
+### Constants
+
+param n, integer, >= 2;
+param Distances{i in 1..n, j in 1..n};
+
+### Variables
+
+var Path{i in 1..n, j in 1..n}, binary;
+var Track{i in 2..n}, integer;
+
+### Constraints
+
+s.t. RespectPathRows{j in 1..n}: sum{i in 1..n} Path[i,j] = 1;
+s.t. RespectPathColumns{i in 1..n}: sum{j in 1..n} Path[i,j] = 1;
+s.t. RespectPathDiagonal{i in 1..n}: Path[i,i] = 0;
+s.t. RespectTrackGrowing{i in 2..n, j in 2..n}: Track[j] + (n-2) >= Track[i] + (n-1) * Path[i,j];
+s.t. RespectTrackBound1{i in 2..n}: 2 <= Track[i];
+s.t. RespectTrackBound2{i in 2..n}: Track[i] <= n;
+
+
+### Objective
+
+minimize TotalDistance:
+    sum{i in 1..n, j in 1..n} Path[i,j] * Distances[i,j];
+
+### End
