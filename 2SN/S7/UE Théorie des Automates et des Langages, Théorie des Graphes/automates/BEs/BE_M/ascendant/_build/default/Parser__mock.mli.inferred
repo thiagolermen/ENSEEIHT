@@ -1,0 +1,16 @@
+type token =
+    UL_SEMICOLON
+  | UL_RBRACE
+  | UL_NAME of string
+  | UL_LBRACE
+  | UL_INT of int
+  | UL_IDENT of string
+  | UL_FIN
+  | UL_EQUAL
+val menhir_begin_marker : int
+val xv_valeur : unit
+val xv_record : unit
+val xv_blockSemi : unit
+val xv_blockName : unit
+val xv_blocLbrace : unit
+val menhir_end_marker : int
