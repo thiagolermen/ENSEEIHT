@@ -1,0 +1,23 @@
+package model;
+
+import javax.persistence.*;
+
+@Entity
+public class Ticket {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	int ticketId;
+	
+	@OneToOne(fetch=FetchType.EAGER,mappedBy="ticket")
+	Passenger passenger;
+	@OneToOne(fetch=FetchType.EAGER,mappedBy="ticket")
+	Reservation reservation;
+	@OneToOne(fetch=FetchType.EAGER,mappedBy="ticket")
+	Flight flight;
+	
+	String seatNumber;
+	
+	Double price;
+	
+}

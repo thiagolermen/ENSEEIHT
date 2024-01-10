@@ -1,0 +1,24 @@
+INDEX VERSION 1.131+/home/thiago/Documents/ENSEEIHT-BigData/2SN/S8/UE Applications concurrentes et communicantes, bases de données/Applications Web/.metadata/.plugins/org.eclipse.jdt.core
+1266686850.index
+1123483032.index
+1138163149.index
+1909066021.index
+3232994586.index
+359106206.index
+748026316.index
+3855966577.index
+3852584637.index
+422547503.index
+2739434723.index
+874782598.index
+1905693740.index
+637347682.index
+497191682.index
+3410844806.index
+3680557615.index
+554386234.index
+3056190887.index
+3631361462.index
+2933818120.index
+943413945.index
+3744121824.index

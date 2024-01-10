@@ -1,0 +1,28 @@
+package model;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import javax.persistence.*;
+
+@Entity
+public class Flight {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	int flightId;
+	
+	@ManyToOne
+	int aircraftId;
+	@ManyToOne
+	int departureAirportId;
+	@ManyToOne
+	int arrivalAirportId;
+	
+	String airline;
+	LocalDate departureDate;
+	LocalDate arrivalDate;
+	LocalTime departureTime;
+	LocalTime arrivalTime;
+	Double price;
+}

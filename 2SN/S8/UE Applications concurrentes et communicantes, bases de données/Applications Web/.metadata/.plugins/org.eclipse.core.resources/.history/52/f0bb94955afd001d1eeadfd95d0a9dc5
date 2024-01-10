@@ -1,0 +1,73 @@
+package model;
+
+public class Booking {
+	
+	User user;
+	Passenger passenger;
+	Flight departureFlight;
+	Flight returnFlight;
+	Ticket ticket;
+	boolean isOneWay;
+	
+	
+	public Booking(User user, Passenger passenger, Flight flight, Ticket ticket, boolean isOneWay) {
+		super();
+		this.user = user;
+		this.passenger = passenger;
+		this.departureFlight = flight;
+		this.ticket = ticket;
+		this.isOneWay = isOneWay;
+	}
+	
+	public Booking(User user, Passenger passenger, Flight deparureFlight, Flight returnFlight, Ticket ticket, boolean isOneWay) {
+		super();
+		this.user = user;
+		this.passenger = passenger;
+		this.departureFlight = departureFlight;
+		this.returnFlight = returnFlight;
+		this.ticket = ticket;
+		this.isOneWay = isOneWay;
+	}
+	public Booking() {
+		super();
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public Passenger getPassenger() {
+		return passenger;
+	}
+	public void setPassenger(Passenger passenger) {
+		this.passenger = passenger;
+	}
+	public Flight getDepartureFlight() {
+		return departureFlight;
+	}
+	public void setDepartureFlight(Flight departureFlight) {
+		this.departureFlight = departureFlight;
+	}
+	public Flight getReturnFlight() {
+		return returnFlight;
+	}
+	public void setReturnFlight(Flight returnFlight) {
+		this.returnFlight = returnFlight;
+	}
+	public Ticket getTicket() {
+		return ticket;
+	}
+	public void setTicket(Ticket ticket) {
+		this.ticket = ticket;
+	}
+	public boolean isOneWay() {
+		return isOneWay;
+	}
+	public void setOneWay(boolean isOneWay) {
+		this.isOneWay = isOneWay;
+	}
+	
+	
+	
+}

@@ -1,0 +1,583 @@
+body, html{
+    font-family: 'Roboto', sans-serif;
+    /* background: url("../assets/background-london.jpg") no-repeat center center fixed;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#body-home{
+    background: url("../assets/background-london.jpg") no-repeat center center fixed; 
+    background-position: center; /* Center the image */
+    background-color: #000000;
+    height: 100%;  
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+  
+footer p {
+    margin-bottom: .25rem;
+}
+
+#header{
+    width: 100%;
+    transition: background ease-out 0.2s;
+}
+
+#mytravel-navbar{
+    background-color: var(--primary);
+    width: 100%;
+    transition: background ease-out 0.2s;
+}
+
+
+#header.active {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(116,131,151,0.8);
+    z-index: 9999;
+}
+  
+#header .navbar-collapse {
+    width: auto;
+}
+
+#header .navbar-brand{
+    color: var(--light);
+}
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--light);
+    border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+    color: var(--grey);
+}
+
+#bg{
+    
+    background-color: rgba(255, 255, 255, 0.0); /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat:repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+.vertical-center {
+    display: table;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
+
+
+#bg > div > div.container > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bg > div > div.input-group.mb-3 > div > ul > li > a{
+    text-decoration: none;
+    color: var(--grey);
+  }
+
+#bg > div > div.input-group.mb-3 > div > ul > li > a:hover{
+    text-decoration: none;
+    color: var(--black);
+}
+
+#main-form{
+    width: 50%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 2%;
+    position: relative;
+}
+
+#btnOneway, #btnRoundTrip{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navbar-toggler-icon{
+    color: var(--grey);
+}
+
+#me .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--light);
+    border-bottom: solid 4px transparent;
+}
+
+#me .nav-link:hover {
+    color: var(--light);
+    text-decoration: underline;
+}
+
+
+.album-bg{
+    background-color: rgba(116,131,151,0.8);
+    padding: 5px;
+}
+
+.block{
+    background-color: var(--light);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 60%;
+}
+
+.card{
+    height: 100%;
+}
+
+.card-body{
+    min-height: 30%;
+    max-height: 20%;
+    margin-bottom: 4%;
+}
+
+.card-btn{
+    position: absolute;
+    left: 5%;
+    bottom: 4%;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color:transparent;
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+.jumbotron-heading {
+    font-weight: 300;
+}
+  
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+.btn-primary {
+    margin-bottom: 1%;
+    color: var(--light);
+    background-color: var(--primary);
+    width: 100%;
+}
+
+.btn-primary:hover {
+    margin-bottom: 1%;
+    color: var(--light);
+    background-color: var(--ternary);
+}
+
+.btn-outline-secondary {
+    margin-bottom: 1%;
+    color: var(--primary-dark);
+    background-color: var(--light);
+    border-color: var(--light); /*set the color you want here*/
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:checked, .btn-outline-secondary:focus, .btn-outline-secondary:active, .btn-outline-secondary.active, .open>.dropdown-toggle.btn-outline-secondary {
+    color: var(--light);
+    background-color: var(--primary);
+    border-color: var(--primary); /*set the color you want here*/
+}
+
+.navlink-separator{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--grey);
+    border-bottom: solid 4px transparent;
+    padding: 10px;
+}
+
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(116,131,151,0.8);; }
+
+.wrapper {
+    max-width: 100%;
+    position: relative;
+}
+
+.wrapper form {
+    padding: 30px 50px;
+}
+
+.wrapper form .form-group {
+    padding-bottom: .5rem;
+}
+
+.wrapper form .option {
+    cursor: pointer;
+}
+
+.wrapper form .option input {
+    display: none;
+}
+
+.wrapper form .checkmark {
+    background-color: var(--light);
+}
+
+.wrapper form .option input:checked~.checkmark:after {
+    display: block;
+}
+
+.wrapper form .option .checkmark:after {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.wrapper form .option:hover input[type="radio"]~.checkmark {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.wrapper form .option input[type="radio"]:checked~.checkmark {
+    background: var(--primary);
+    color: var(--light);
+    border-color: var(--primary);
+}
+
+.wrapper form .option input[type="radio"]:checked~.checkmark:after {
+    color: var(--light);
+    border-color: var(--primary);
+}
+
+.all-forms {
+    background-color: rgba(255, 255, 255,0.3);
+    padding: 0%;
+}
+
+.wrapper form .form-control {
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.wrapper form .form-control:focus {
+    box-shadow: none;
+}
+
+.wrapper form input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+
+input[type="date"] {
+    cursor: pointer;
+}
+
+.btn-search {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--grey);
+    background-color: var(--primary);
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-search:hover {
+    margin-bottom: 1%;
+    color: var(--light);
+    background-color: var(--ternary);
+}
+
+.wrapper form .label::after {
+    position: absolute;
+    /* background-color: #fff; */
+    top: 10%;
+    left: 10%;
+    font-size: 0.9rem;
+    /* margin: 0rem 0.4rem; */
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    color: var(--light);
+    transition: all .2s ease-in-out;
+    transform: scale(0);
+}
+
+.wrapper form .label#from::after {
+    content: 'From';
+}
+
+.wrapper form .label#to::after {
+    content: 'To';
+}
+
+.wrapper form .label#departureDate::after {
+    content: 'Depart Date';
+}
+
+.wrapper form .label#return::after {
+    content: 'Return Date';
+}
+
+.wrapper form .label#psngr::after {
+    content: 'Traveller(s)';
+}
+
+.wrapper form input[type="text"]:focus~.label::after {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+}
+
+.md-autocomplete-suggestions-container {
+     width:100% !important;
+}
+
+.wrapper form input[type="search"]:focus~.label::after {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+}
+
+.wrapper form input[type="date"]:focus~.label::after {
+    top: -5px;
+    left: 0px;
+    transform: scale(1);
+}
+
+.wrapper form md-autocomplete:focus~.label::after {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+}
+
+/* Margin */
+.margin {
+    margin: 2rem 0rem;
+}
+
+.wrapper form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--light);
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 0%;
+    letter-spacing: 4px
+  }
+
+.login-box {
+	z-index: 999999;
+    float: right;
+    position: absolute;
+    right: 5%;
+    width: px;
+    height: auto;
+    padding: 15px;
+    /* transform: translate(-50%, -50%); */
+    background: rgba(9,9,14,.3);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(9,9,14,.4);
+    border-radius: 5px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 5px;
+    padding: 0;
+    color: var(--light);
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 4px 0;
+    font-size: 12px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -10px;
+    left: 0;
+    color: var(--ternary);
+    font-size: 12px;
+  }
+  
+  .btn-login {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--light);
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 8%;
+    letter-spacing: 4px
+  }
+  
+  .btn-login:hover {
+    background: var(--ternary);
+    color: var(--black);
+    border-radius: 5px;
+    /* box-shadow: 0 0 5px var(--light),
+                0 0 25px var(--light),
+                0 0 50px var(--light),
+                0 0 100px var(--light) */
+  }
+  
+  .login-box .btn-login span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box .btn-login span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--light));
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box .btn-login span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--ternary));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box .btn-login span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--ternary));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box .btn-login span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--ternary));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+/* Media Queries */
+@media(max-width: 575.5px) {
+    .wrapper {
+        margin: 10px;
+    }
+
+    .wrapper form {
+        padding: 20px;
+    }
+
+    .margin {
+        margin: .2rem 0rem;
+    }
+}
+
+/* Media Queries */
+@media(max-width: 575.5px) {
+    .wrapper {
+        margin: 10px;
+    }
+
+    .wrapper form {
+        padding: 20px;
+    }
+
+    .margin {
+        margin: .2rem 0rem;
+    }
+}

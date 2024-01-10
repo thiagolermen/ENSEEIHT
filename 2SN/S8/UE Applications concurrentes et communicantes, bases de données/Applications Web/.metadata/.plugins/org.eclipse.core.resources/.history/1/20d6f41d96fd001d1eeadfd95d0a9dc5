@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="regi">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../styles/main.css" />
+	
+	<!-- IMPORT ANGULAR JS 1.4.8-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <title>MyTravel - Flights</title> 
+    
+    <body id="body-list"> 
+        <div ng-app="listTicketsApp" ng-controller="listTicketsCtrl" >
+            <!--HEADER-->
+            <div id="header-list">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary);">
+                    <a class="navbar-brand">
+                        <a class="nav-link active" href="../index.html">
+                            <img class="card-img-top" style="width: 15%; margin-left: 10%" src="../assets/logo-white-my-travel.png" alt="Card image cap">
+                        </a>
+                    </a>
+                    
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-end" style="margin-right: 5%" id="navbarNav">
+                       
+                        <ul class="navbar-nav" id="about">
+                            <li class="nav-item" style="margin-top: 2.7%;">
+                                <a class="nav-link active" ng-click="doClick('home')" href="">Home</a>
+                            </li>
+                            <li class="nav-item" style="margin-top: 2.7%;">
+                                <a class="nav-link active" ng-click="doClick('my-account')" href="">My Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        <!-- MAIN BODY -->
+        <main role="main">
+        <!-- FORM WITH LOGO + REGISTER -->
+        <div class="container" style="padding: 1%;">
+            <div class="me-auto" style="width: 70%;">
+            	<h2>My tickets</h2>
+                <ul ng-repeat="t in tickets" class="list-group list-group-light flight-list">
+                    <li class="list-group-item d-flex flight-item">
+                        <div class="row align-items-start">
+                        	<div class="col align-self-center">
+                                <div class="vstack gap-3">
+                                    <div class="row align-items-start">
+                                        <h2 style="letter-spacing: 1px;">Ticket number: #{{t.ticketId}}</h2>
+                                        <h2 style="letter-spacing: 1px;">Departure: {{t.flight.departureDate}}</h2>
+                                        <h2 style="letter-spacing: 1px; font-size: 0.7vw">Passenger: {{t.firstName} {t.lastName}}</h2>
+                                        <h2 style="letter-spacing: 1px; font-size: 0.7vw">Seat: {{t.seatNumber}}</h2>
+                                        <h2 style="letter-spacing: 1px; font-size: 0.7vw">Aircraft: {{t.flight.aircraft.aircraftName}}</h2>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col align-self-center">
+                                <div class="vstack gap-3">
+                                    <div class="row align-items-start" style="flex-wrap: nowrap;">
+                                        <div class="col align-self-center"><h2>Departure: <br> {{t.flight.departureAirport.airportName}}</h2></div>
+                                    </div>
+                                    <div class="row align-items-start" style="flex-wrap: nowrap;">
+                                        <div class="col align-self-center"><h2>Arrival: <br> {{t.flight.arrivalAirport.airportName}}</h2></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col align-self-center">
+                                <div class="vstack gap-3">
+                                    <h2>Paid price: <br> € {{t.price}}</h2>
+                                </div>
+                            </div>
+                    	</div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+            </main>
+        </div>
+        </body>
+
+        <!-- JS -->
+        <script src="../scripts/list_tickets.js"></script>
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../scripts/bootstrap.min.js"></script>
+    </body>
+</html>

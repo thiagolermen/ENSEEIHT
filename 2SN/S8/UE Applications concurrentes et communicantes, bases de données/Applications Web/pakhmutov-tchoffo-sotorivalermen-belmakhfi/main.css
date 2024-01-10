@@ -1,0 +1,9 @@
+@import url(./bootstrap.min.css);
+@import url(./config.css);
+@import url(./index.css);
+@import url(./responsive.css);
+@import url(./pages/register.css);
+@import url(./pages/list_flights.css);
+@import url(./pages/book_flight.css);
+@import url(./pages/list_tickets.css);
+@import url(./pages/my_account.css);

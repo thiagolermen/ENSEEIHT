@@ -1,0 +1,96 @@
+package model;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Collection;
+
+import javax.persistence.*;
+
+@Entity
+public class Flight {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int flightId;
+	
+	@ManyToOne
+	private int aircraftId;
+	@ManyToOne
+	private int departureAirportId;
+	@ManyToOne
+	private int arrivalAirportId;
+	
+	@OneToMany(fetch=FetchType.EAGER,mappedBy="owner")
+    Collection<Passenger> listPassenger;
+	
+	private String airline;
+	private LocalDate departureDate;
+	private LocalDate arrivalDate;
+	private LocalTime departureTime;
+	private LocalTime arrivalTime;
+	private Double price;
+	
+	
+	public int getFlightId() {
+		return flightId;
+	}
+	public void setFlightId(int flightId) {
+		this.flightId = flightId;
+	}
+	public int getAircraftId() {
+		return aircraftId;
+	}
+	public void setAircraftId(int aircraftId) {
+		this.aircraftId = aircraftId;
+	}
+	public int getDepartureAirportId() {
+		return departureAirportId;
+	}
+	public void setDepartureAirportId(int departureAirportId) {
+		this.departureAirportId = departureAirportId;
+	}
+	public int getArrivalAirportId() {
+		return arrivalAirportId;
+	}
+	public void setArrivalAirportId(int arrivalAirportId) {
+		this.arrivalAirportId = arrivalAirportId;
+	}
+	public String getAirline() {
+		return airline;
+	}
+	public void setAirline(String airline) {
+		this.airline = airline;
+	}
+	public LocalDate getDepartureDate() {
+		return departureDate;
+	}
+	public void setDepartureDate(LocalDate departureDate) {
+		this.departureDate = departureDate;
+	}
+	public LocalDate getArrivalDate() {
+		return arrivalDate;
+	}
+	public void setArrivalDate(LocalDate arrivalDate) {
+		this.arrivalDate = arrivalDate;
+	}
+	public LocalTime getDepartureTime() {
+		return departureTime;
+	}
+	public void setDepartureTime(LocalTime departureTime) {
+		this.departureTime = departureTime;
+	}
+	public LocalTime getArrivalTime() {
+		return arrivalTime;
+	}
+	public void setArrivalTime(LocalTime arrivalTime) {
+		this.arrivalTime = arrivalTime;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	
+	
+}

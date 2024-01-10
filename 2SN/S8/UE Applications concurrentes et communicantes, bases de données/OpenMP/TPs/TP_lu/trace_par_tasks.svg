@@ -1,0 +1,44 @@
+<svg x="-11" y="-8" width="1060.000000" height="60.500000">
+    <rect x="274.834437" y="0.000000" width="100.993377" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="443.708609" y="0.000000" width="84.437086" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="953.642384" y="0.000000" width="46.357616" height="10.000000" fill="#8dd35f" stroke-width="0"/>
+    <rect x="223.509934" y="10.000000" width="162.251656" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="468.543046" y="10.000000" width="100.993377" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="581.125828" y="10.000000" width="76.158940" height="10.000000" fill="#d38d5f" stroke-width="0"/>
+    <rect x="675.496689" y="10.000000" width="92.715232" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="778.145695" y="10.000000" width="59.602649" height="10.000000" fill="#d38d5f" stroke-width="0"/>
+    <rect x="847.682119" y="10.000000" width="61.258278" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="918.874172" y="10.000000" width="33.112583" height="10.000000" fill="#d38d5f" stroke-width="0"/>
+    <rect x="256.622517" y="20.000000" width="117.549669" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="397.350993" y="20.000000" width="99.337748" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="89.403974" y="30.000000" width="81.125828" height="10.000000" fill="#d38d5f" stroke-width="0"/>
+    <rect x="190.397351" y="30.000000" width="112.582781" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+    <rect x="312.913907" y="30.000000" width="59.602649" height="10.000000" fill="#d38d5f" stroke-width="0"/>
+    <rect x="692.052980" y="30.000000" width="72.847682" height="10.000000" fill="#ffdd55" stroke-width="0"/>
+<line x1="0" y1="50.500000" x2="1020.000000" y2="50.500000"                      style="stroke:rgb(0,0,0);stroke-width:1"/>
+<text x="1010.000000" y="8.000000" style="font-size:6pt">Thread 0</text>
+<text x="1010.000000" y="18.000000" style="font-size:6pt">Thread 1</text>
+<text x="1010.000000" y="28.000000" style="font-size:6pt">Thread 2</text>
+<text x="1010.000000" y="38.000000" style="font-size:6pt">Thread 3</text>
+<text x="0" y="59.500000" style="font-size:6pt">Time (usec.)</text>
+<line x1="100.000000" y1="49.500000" x2="100.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="100.000000" y="57.500000" style="font-size:6pt"> 60 </text>
+<line x1="200.000000" y1="49.500000" x2="200.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="200.000000" y="57.500000" style="font-size:6pt"> 121 </text>
+<line x1="300.000000" y1="49.500000" x2="300.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="300.000000" y="57.500000" style="font-size:6pt"> 181 </text>
+<line x1="400.000000" y1="49.500000" x2="400.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="400.000000" y="57.500000" style="font-size:6pt"> 242 </text>
+<line x1="500.000000" y1="49.500000" x2="500.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="500.000000" y="57.500000" style="font-size:6pt"> 302 </text>
+<line x1="600.000000" y1="49.500000" x2="600.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="600.000000" y="57.500000" style="font-size:6pt"> 362 </text>
+<line x1="700.000000" y1="49.500000" x2="700.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="700.000000" y="57.500000" style="font-size:6pt"> 423 </text>
+<line x1="800.000000" y1="49.500000" x2="800.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="800.000000" y="57.500000" style="font-size:6pt"> 483 </text>
+<line x1="900.000000" y1="49.500000" x2="900.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="900.000000" y="57.500000" style="font-size:6pt"> 544 </text>
+<line x1="1000.000000" y1="49.500000" x2="1000.000000" y2="51.500000"                      style="stroke:rgb(0,0,0);stroke-width:0.5"/>
+<text x="1000.000000" y="57.500000" style="font-size:6pt"> 604 </text>
+</svg>

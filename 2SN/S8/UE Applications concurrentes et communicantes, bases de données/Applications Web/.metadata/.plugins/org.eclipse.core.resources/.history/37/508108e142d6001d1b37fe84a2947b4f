@@ -1,0 +1,38 @@
+package model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
+public class Aircraft {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int aircraftId;
+	
+	private String aircraftName;
+	private int aircraftCapacity;
+	
+	public int getAircraftId() {
+		return aircraftId;
+	}
+	public void setAircraftId(int aircraftId) {
+		this.aircraftId = aircraftId;
+	}
+	public String getAircraftName() {
+		return aircraftName;
+	}
+	public void setAircraftName(String aircraftName) {
+		this.aircraftName = aircraftName;
+	}
+	public int getAircraftCapacity() {
+		return aircraftCapacity;
+	}
+	public void setAircraftCapacity(int aircraftCapacity) {
+		this.aircraftCapacity = aircraftCapacity;
+	}
+	
+	
+}

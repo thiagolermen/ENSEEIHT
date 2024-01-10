@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/thiago/Documents/ENSEEIHT-BigData/2SN/S8/UE Applications concurrentes et communicantes, bases de données/Applications Web/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2909374407.index
+3524675956.index
+637347682.index
+2106456685.index
+472958431.index
+751595134.index

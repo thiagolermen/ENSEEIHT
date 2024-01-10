@@ -1,0 +1,119 @@
+body, html{
+    font-family: 'Roboto', sans-serif;
+    /* background: url("../assets/background-london.jpg") no-repeat center center fixed;  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#body-list{
+    background-position: center; /* Center the image */
+    background-color: var(--light);
+    height: 100%;  
+    float: left;
+    width: 100%;
+}
+
+#header-register{
+    background-color: var(--primary);
+    width: 100%;
+    transition: background ease-out 0.2s;
+}
+
+#header-list.active {
+    position: fixed;
+    background: var(--primary);
+    box-shadow: 0 0 30px 0 rgba(116,131,151,0.8);
+    z-index: 9999;
+}
+  
+#header .navbar-collapse {
+    width: auto;
+}
+
+#header .navbar-brand{
+    color: var(--primary);
+}
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--light);
+    border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+    color: var(--grey);
+}
+
+#main-list{
+    width: 50%; /* Can be in percentage also. */
+    height: auto;
+    margin: 1% auto;
+    padding: 1%;
+}
+
+.flight-title{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.flight-item{
+  height: 150px auto;
+  width: 60% auto;
+  border-radius: 0%;
+}
+
+.flight-info{
+  padding: 2%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.flight-list a{
+  position: relative;
+  float: right;
+  padding: 10px 20px;
+  color: var(--light);
+  background-color: var(--primary);
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  width: auto;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.flight-list h2{
+  position: relative;
+  float: right;
+  padding: 10px 20px;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: auto;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.flight-list a:hover {
+  color: var(--light);
+  background-color: var(--ternary);
+  /* box-shadow: 0 0 5px var(--light),
+              0 0 25px var(--light),
+              0 0 50px var(--light),
+              0 0 100px var(--light) */
+}
+
+
+

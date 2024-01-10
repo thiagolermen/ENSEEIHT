@@ -1,0 +1,86 @@
+graph G {
+node [color=black,
+fillcolor=white,
+shape=circle,
+style=filled
+];
+node0000[label="id:0\lweight:6\ldist:6\l"];
+node0001[label="id:1\lp:0\lweight:1\ldist:7\l"];
+node0000 -- node0001
+node0002[label="id:2\lp:1\lweight:7\ldist:14\l"];
+node0001 -- node0002
+node0003[label="id:3\lp:2\lweight:1\ldist:15\l"];
+node0002 -- node0003
+node0004[label="id:4\lp:3\lweight:4\ldist:19\l"];
+node0003 -- node0004
+node0005[label="id:5\lp:4\lweight:7\ldist:26\l"];
+node0004 -- node0005
+node0006[label="id:6\lp:5\lweight:1\ldist:27\l"];
+node0005 -- node0006
+node0007[label="id:7\lp:6\lweight:1\ldist:28\l"];
+node0006 -- node0007
+node0008[label="id:8\lp:6\lweight:1\ldist:28\l"];
+node0006 -- node0008
+node0009[label="id:9\lp:7\lweight:7\ldist:35\l"];
+node0007 -- node0009
+node0010[label="id:10\lp:8\lweight:7\ldist:35\l"];
+node0008 -- node0010
+node0011[label="id:11\lp:9\lweight:6\ldist:41\l"];
+node0009 -- node0011
+node0012[label="id:12\lp:9\lweight:10\ldist:45\l"];
+node0009 -- node0012
+node0013[label="id:13\lp:10\lweight:2\ldist:37\l"];
+node0010 -- node0013
+node0014[label="id:14\lp:11\lweight:4\ldist:45\l"];
+node0011 -- node0014
+node0015[label="id:15\lp:12\lweight:3\ldist:48\l"];
+node0012 -- node0015
+node0016[label="id:16\lp:13\lweight:7\ldist:44\l"];
+node0013 -- node0016
+node0017[label="id:17\lp:13\lweight:8\ldist:45\l"];
+node0013 -- node0017
+node0018[label="id:18\lp:13\lweight:5\ldist:42\l"];
+node0013 -- node0018
+node0019[label="id:19\lp:14\lweight:10\ldist:55\l"];
+node0014 -- node0019
+node0020[label="id:20\lp:15\lweight:1\ldist:49\l"];
+node0015 -- node0020
+node0021[label="id:21\lp:16\lweight:1\ldist:45\l"];
+node0016 -- node0021
+node0022[label="id:22\lp:16\lweight:6\ldist:50\l"];
+node0016 -- node0022
+node0023[label="id:23\lp:16\lweight:4\ldist:48\l"];
+node0016 -- node0023
+node0024[label="id:24\lp:17\lweight:4\ldist:49\l"];
+node0017 -- node0024
+node0025[label="id:25\lp:18\lweight:6\ldist:48\l"];
+node0018 -- node0025
+node0026[label="id:26\lp:19\lweight:8\ldist:63\l"];
+node0019 -- node0026
+node0027[label="id:27\lp:19\lweight:8\ldist:63\l"];
+node0019 -- node0027
+node0028[label="id:28\lp:19\lweight:2\ldist:57\l"];
+node0019 -- node0028
+node0029[label="id:29\lp:20\lweight:4\ldist:53\l"];
+node0020 -- node0029
+node0030[label="id:30\lp:21\lweight:3\ldist:48\l"];
+node0021 -- node0030
+node0031[label="id:31\lp:21\lweight:4\ldist:49\l"];
+node0021 -- node0031
+node0032[label="id:32\lp:21\lweight:9\ldist:54\l"];
+node0021 -- node0032
+node0033[label="id:33\lp:22\lweight:6\ldist:56\l"];
+node0022 -- node0033
+node0034[label="id:34\lp:23\lweight:8\ldist:56\l"];
+node0023 -- node0034
+node0035[label="id:35\lp:23\lweight:10\ldist:58\l"];
+node0023 -- node0035
+node0036[label="id:36\lp:23\lweight:3\ldist:51\l"];
+node0023 -- node0036
+node0037[label="id:37\lp:24\lweight:7\ldist:56\l"];
+node0024 -- node0037
+node0038[label="id:38\lp:25\lweight:4\ldist:52\l"];
+node0025 -- node0038
+node0039[label="id:39\lp:25\lweight:9\ldist:57\l"];
+node0025 -- node0039
+}
