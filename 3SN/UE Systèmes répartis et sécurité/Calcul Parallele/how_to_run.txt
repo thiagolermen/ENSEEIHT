@@ -1,0 +1,2 @@
+/usr/bin/smpirun -hostfile ../archis/cluster_hostfile.txt -platform ../archis/cluster_crossbar.xml -np 4 ./who_am_i
+
