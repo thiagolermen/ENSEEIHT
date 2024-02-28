@@ -1,0 +1,5 @@
+function A = getMatrixA(N)
+    return  zeros(N-1) + diag(2*ones(N-1,1), 0) + diag(-1*ones(N-1,1), -1) + diag(-1*ones(N-1,1), 1)
+
+
+

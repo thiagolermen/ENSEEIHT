@@ -1,0 +1,13 @@
+int nx = 10, ny = 20;
+real A = 0.0, B = 1.0, C = 1.0, D = 2.0;
+
+mesh Th = square(nx, ny, [A + B * x, C + D * y]);
+mesh ThSquare = trunc(Th, y < 2.0, split = 4);
+
+mesh ThL1 = trunc(Th, (y > 1) && (y < 1.5), split = 4);
+mesh ThL2 = trunc(Th, (x < 1.5) && (y > 0.5 && y < 3), split = 1);
+mesh ThLSum = ThL1 + ThL2;
+
+plot(Th, wait = true, cmm = "Maillage Th");
+// plot(ThSquare, wait = true, cmm = "Maillage ThSquare");
+plot(ThL1, wait = true, cmm = "Maillage Th1");

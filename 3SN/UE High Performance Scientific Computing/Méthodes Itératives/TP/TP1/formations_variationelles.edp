@@ -1,0 +1,22 @@
+int nx = 10, ny = 20;
+real A = 0.0, B = 1.0, C = 1.0, D = 2.0;
+
+mesh Th = square(nx, ny, [A + B * x, C + D * y]);
+
+func f = 1 + x + y;
+varf Poisson(u, v) = int2d(Th)(dx(u)*dx(v) + dy(u)*dy(v)) + int2d(Th)(f*v);
+
+varf PoissonDirichlet(u, v) = int2d(Th)(dx(u)*dx(v) + dy(u)*dy(v)) + int2d(Th)(f*v) + on(4, u = 0.0);
+
+mesh ThL = trunc(Th, (y < 1.5) || (x < 0.5), split = 4);
+Th = ThL; // defined in the first example
+fespace Vh(Th, P1);
+
+matrix Mat = PoissonDirichlet(Vh, Vh);
+Vh rhs, sol;
+rhs[] = PoissonDirichlet(0, Vh);
+sol[] = Mat^-1 * rhs[];
+plot(sol, wait = true, cmm = "Solution", value = true, fill = true, dim = 3);
+
+varf PoissonRobin(u, v) = int2d(Th)(dx(u)*dx(v) + dy(u)*dy(v)) + int2d(Th)(f*v) + on(4, u = 0.0)
++ int1d(Th, 2) (10*u*v) + int1d(Th, 2) (10*cos(4*y)*v);

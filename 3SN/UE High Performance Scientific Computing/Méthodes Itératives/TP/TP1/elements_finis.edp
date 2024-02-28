@@ -1,0 +1,31 @@
+int nx = 10, ny = 20;
+real A = 0.0, B = 1.0, C = 1.0, D = 2.0;
+mesh Th = square(nx, ny, [A + B * x, C + D * y]);
+
+fespace Vh(Th, P0);
+
+func g = x*x + y*y; // cannot change g afterwards!
+Vh gEF = g;
+
+plot(gEF, wait = true, cmm = "x*x + y*y", value = true, fill = true,
+dim = 3);
+
+gEF[] = 1.0;
+plot(gEF, wait = true, cmm = "1", value = true, fill = true, dim = 3);
+
+for(int i = 0; i < gEF[].n; ++i) {
+    if(i > 200) {
+        gEF[][i] = 0.0;
+    }
+    else if(i < 100) {
+        gEF[][i] = gEF[].n / 2.0;
+    }
+    else {
+        gEF[][i] = i;
+    }
+}
+
+plot(gEF, wait = true, cmm = "A weird function", value = true, fill = true,
+dim = 3);
+
+cout << gEF[].n << " == " << Vh.ndof << endl;
